@@ -69,6 +69,58 @@
                 <use xlink:href="./imges/vector.svg#icon-vector"></use>
               </svg>
             </button>
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="js-user-form" autocomplete="on">
+              <div role="input-group" class="input-group">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="name" />
+                  <svg class="icon icon-person">
+                    <use xlink:href="./imges/icon.svg#icon-person"></use>
+                  </svg>
+                </label>
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="tel" />
+                  <svg class="icon icon-phone">
+                    <use xlink:href="./imges/icon.svg#icon-phone"></use>
+                  </svg>
+                </label>
+                <label>
+                  <span>Почта</span>
+                  <input type="email" name="mail" />
+                  <svg class="icon icon-email">
+                    <use xlink:href="./imges/icon.svg#icon-email"></use>
+                  </svg>
+                </label>
+                <label>
+                  <span>Комментарий</span>
+                  <textarea
+                    name="comment"
+                    rows="10"
+                    placeholder="Введите текст"
+                    autocomplete="off"
+                  ></textarea>
+                </label>
+              </div>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  name="license-agry"
+                  class="visually-hidden license-agry"
+                />
+                <svg class="icon icon-check">
+                  <use xlink:href="./imges/icon.svg#icon-check"></use>
+                </svg>
+                <span
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a>
+                </span>
+              </label>
+              <button type="submit" class="js-user-form-submit">
+                <span>Отправить</span>
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -495,6 +547,19 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscribe-form">
+          <h4 class="subscribe-title">Подпишитесь на рассылку</h4>
+          <div class="send-group">
+            <input type="email" placeholder="E-mail" class="subscribe-email" />
+            <button type="submit" class="subscribe-btn">
+              <span class="subscribe-btn-titel">Подписаться</span>
+              <svg class="icon icon-send">
+                <use xlink:href="./imges/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
