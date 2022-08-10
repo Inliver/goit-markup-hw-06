@@ -22,16 +22,20 @@
   </head>
   <body>
     <!-- Header-->
-    <header>
-      <div class="conteiner">
-        <a href="./index.html" class="logo logo-heder"
+    <header class="header">
+      <div class="conteiner header__conteiner">
+        <a href="./index.html" class="logo heder__logo"
           ><span class="first-logo">Web</span>Studio</a
         >
-        <nav>
-          <ul class="list">
-            <li><a href="./index.html" class="nav-item active">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-item">Портфолио</a></li>
-            <li><a href="" class="nav-item">Контакты</a></li>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link active">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфолио</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
         <div class="contact">
@@ -52,9 +56,9 @@
     </header>
     <!-- Main-->
     <main>
-      <section class="hero">
+      <section class="section hero">
         <div class="conteiner">
-          <img src="../imges/hero.jpg" alt="our team" class="hero__img" />
+          <img src="./imges/hero.jpg" alt="our team" class="hero__img" />
           <h1 class="hero-index">
             Эффективные решения <br />
             для вашего бизнеса
@@ -70,7 +74,9 @@
                 <use xlink:href="./imges/vector.svg#icon-vector"></use>
               </svg>
             </button>
-            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="section-title">
+              Оставьте свои данные, мы вам перезвоним
+            </h2>
             <form class="js-user-form" autocomplete="on">
               <div role="input-group" class="input-group">
                 <label>
@@ -124,9 +130,9 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="conteiner">
-          <h2 class="visually-hidden">Особенности</h2>
+          <h2 class="visually-hidden section-title">Особенности</h2>
           <ul class="list advantage">
             <li>
               <div>
@@ -179,9 +185,9 @@
           </ul>
         </div>
       </section>
-      <section class="works">
+      <section class="section works">
         <div class="conteiner">
-          <h2>Чем мы занимаемся</h2>
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="works-item">
               <img
@@ -223,9 +229,9 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="section team">
         <div class="conteiner">
-          <h2>Наша команда</h2>
+          <h2 class="section-title">Наша команда</h2>
           <ul class="list list-team">
             <li class="team-item">
               <img
@@ -234,7 +240,7 @@
                 width="270"
                 height="260"
               />
-              <div class="title">
+              <div class="list-team--title">
                 <h3>Игорь Демьяненко</h3>
                 <p>Product Designer</p>
                 <div>
@@ -430,9 +436,9 @@
           </ul>
         </div>
       </section>
-      <section class="clients">
+      <section class="section clients">
         <div class="conteiner">
-          <h2>Постоянные клиены</h2>
+          <h2 class="section-title">Постоянные клиены</h2>
           <ul class="list client-list">
             <li class="client-item">
               <a href="" target="_blank" rel="noopener noreferrer">

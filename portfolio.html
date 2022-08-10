@@ -22,18 +22,20 @@
   </head>
   <body>
     <!-- Header-->
-    <header>
-      <div class="conteiner">
-        <a href="./index.html" class="logo logo-heder"
+    <header class="header">
+      <div class="conteiner header__conteiner">
+        <a href="./index.html" class="logo heder__logo"
           ><span class="first-logo">Web</span>Studio</a
         >
-        <nav>
-          <ul class="list">
-            <li><a href="./index.html" class="nav-item">Студия</a></li>
-            <li>
-              <a href="./portfolio.html" class="nav-item active">Портфолио</a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студия</a>
             </li>
-            <li><a href="" class="nav-item">Контакты</a></li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link active">Портфолио</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
         <div class="contact">
@@ -54,9 +56,9 @@
     </header>
     <!--main-->
     <main>
-      <section class="portfolio">
+      <section class="section portfolio">
         <div class="conteiner">
-          <h1 class="visually-hidden">Наше портфолио</h1>
+          <h1 class="visually-hidden section-title">Наше портфолио</h1>
           <ul class="list portfolio-filter">
             <li>
               <input
@@ -120,7 +122,7 @@
                 </div>
               </div>
 
-              <div class="title">
+              <div class="portfolio-item--title">
                 <h2>Технокряк</h2>
                 <p>Веб-сайт</p>
               </div>
