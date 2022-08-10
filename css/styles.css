@@ -60,7 +60,7 @@ li {
   stroke: currentColor;
   fill: currentColor;
 }
-
+/* header */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -82,12 +82,12 @@ li {
   margin-right: 93px;
 }
 
-.heder__logo {
-  color: #000000;
+.logo__text.logo__text--blue {
+  color: #2196f3;
 }
 
-.logo .first-logo {
-  color: #2196f3;
+.heder__logo {
+  color: #000000;
 }
 
 .nav__list {
@@ -135,16 +135,32 @@ li {
   border-radius: 2px;
 }
 
-.header .contact {
+.header__contacts-block {
   margin-left: auto;
 }
 
-.contact-header svg {
+.header__icon {
   margin-right: 10px;
 }
 
-.contact .contact-header:not(:last-child) {
+.header__contact:not(:last-child) {
   margin-right: 50px;
+}
+
+.header__contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+  text-decoration: none;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__contact:hover,
+.header__contact:focus {
+  color: var(--focus-link-color);
 }
 
 .icon-envelope {
@@ -613,17 +629,6 @@ main .conteiner {
 .client-list a:focus {
   color: var(--focus-link-color);
   border-color: var(--focus-link-color);
-}
-
-.contact-header {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
-  text-decoration: none;
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer {
